@@ -67,7 +67,7 @@ watch(mdAndDown, (val) => {
     </div>
   </v-navigation-drawer>
   <!------Header-------->
-  <v-app-bar elevation="0" height="70" class="top-header ">
+  <v-app-bar elevation="1" height="70" class="top-header ">
     <div class="d-flex align-center justify-space-between w-100">
       <div>
          

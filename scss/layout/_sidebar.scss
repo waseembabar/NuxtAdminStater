@@ -53,8 +53,9 @@
     /*General Menu css*/
 
     .v-list-group__items {
+        padding-left: 10px !important;
         .v-list-item {
-            min-height: 35px !important;
+            min-height: 25px !important;
             padding-inline-start: calc(12px + var(--indent-padding) / 10) !important;
 
             .v-list-item__prepend .dot {
@@ -78,6 +79,7 @@
             }
 
             &.v-list-item--active {
+                margin-right: 20px !important;
                 .v-list-item__prepend .dot {
                     background-color: rgb(var(--v-theme-primary));
                 }
@@ -116,10 +118,15 @@
 
     /*This is for the dropdown*/
     .v-list {
+        border-right: 1px solid rgba(204, 204, 204, 0.555); 
         color: rgb(var(--v-theme-textSecondary));
         .v-list-item {
-            border-radius: $border-radius-root + 4 !important;}
+         
+              margin: 0px 15px 0px 6px !important;
+            // border-radius: $border-radius-root + 4 !important;
+        }
         .v-list-subheader {
+            margin-left: 10px;
             &:first-of-type {
                 border-top: 0;
             }
@@ -130,9 +137,9 @@
 
         >.v-list-item.v-list-item--active,
         .v-list-item--active>.v-list-item__overlay {
-            background: rgb(var(--v-theme-primary));
-            color: white;
-            box-shadow: 0 17px 20px -8px rgba(var(--v-theme-primary), 0.2);
+         
+            color: rgb(0, 0, 0);
+            
         }
 
         .v-list-group {
